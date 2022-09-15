@@ -1,0 +1,76 @@
+:root {
+    --cor-back: rgba(28, 0, 44, 0.486);
+    --cor-font: rgb(255, 255, 255);
+    --cor-nav: rgb(0, 0, 0);
+    --cor-hover: rgb(255, 0, 0);
+}
+
+* {
+    background-image: url(img/);
+}
+
+/* barra de navegação */
+nav {
+    text-align: center;
+}
+
+nav img {
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    background-color: var(--cor-nav);
+    display: inline-flex;
+    padding: 0;
+}
+.dp-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-font);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.dp-menu ul li:hover {
+    background-color: var(--cor-hover);
+    transition: 50ms;
+}
+
+.dp-menu ul ul {
+    display: none;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+.dp-menu ul ul li:hover{
+    width: 150px;
+}
+.ov:hover{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ov{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Grid*/
+

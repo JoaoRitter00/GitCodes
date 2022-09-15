@@ -1,0 +1,140 @@
+:root {
+    --cor-back: rgba(28, 0, 44, 0.486);
+    --cor-font: #d675a7;
+    --cor-nav: rgb(0, 0, 0);
+    --cor-hover: #cbe557;
+}
+
+body {
+    background-image: url(img/);
+    background-size: cover;
+}
+
+/* barra de navegação */
+.navbar1 {
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+nav {
+    top: 0;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    position:absolute;
+    left: 40%;
+    box-sizing: border-box;
+
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    background-color: var(--cor-nav);
+    display: inline-flex;
+    padding: 0px;
+}
+
+.dp-menu ul li {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-font);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.dp-menu ul li:hover {
+    background-color: var(--cor-hover);
+    transition: 500ms;
+    
+}
+
+.dp-menu ul ul {
+    display: none;
+    position: relative;/**/
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+    
+}
+
+.dp-menu ul ul {
+    width: 125px;
+    padding: 20px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+
+.dp-menu ul ul li:hover {
+    width: 125px;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+
+.icon1 {
+
+    width: 125px;
+    height: 125px;
+}
+
+/*Carrousel*/
+.slide-container {
+    width: 1000px;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+/*tabela*/
+.imgt {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.tabela {
+    width: 25% !important;
+    margin: auto;
+    text-align: center;
+}
+
+/*grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    text-align: center;
+    
+    justify-content: center;
+    gap: 40px 20px;
+
+}
+
+.grid-item {
+    border: 0.1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px black;
+}
+.grid-item a {
+    color: #d675a7;
+    text-decoration: none;
+    text-shadow: 1px 0.1px 1px black;
+}
+.grid-item:hover {
+    box-shadow: 4px 4px 10px black;
+}
+
+.grid-img {
+    height: 125px;
+    width: 125px;
+}

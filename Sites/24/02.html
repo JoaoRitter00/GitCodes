@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JS</title>
+    <style>
+        * {
+            position: relative;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+        }
+
+        .comandos {
+            color: #DCDCAA;
+
+
+        }
+
+        .P1 {
+            left: 500px;
+        }
+
+        .comandos,
+        .variaveis {
+            padding: 5px;
+        }
+
+        input {
+            background-color: rgb(24, 23, 22);
+        }
+
+        .P2 {
+            margin-top: 50PX;
+            top: 500px;
+            left: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Codigos Aprendidos-->
+    <div class="P1">
+        <H5>Basicamente com programação se pode fazer qualquer coisa, aprendemos hoje a linguagem de programação
+            JavaScript (JS)</H5>
+        <div class="comandos"> Alert</div> mostra determinada mensagem na maioria das vezes por variaveis
+        <div class="comandos">Var</div> declara uma variavel (normalmente se usa var nome = (função) (valor))
+        <div class="variaveis">
+            <div class="comandos">Let</div> ele só pode trabalhar dentro do escopo dele mesmo
+            <div class="comandos">Const</div> ele é restrito à ser mudado uma vez, para assegurar a integridade dos
+            dados da variante
+        </div>
+        <div class="comandos">Prompt</div> armazena dados do usuario
+        <div class="comandos">Number</div> usa os dados em forma de numero
+
+        <!--Aula de Java Script-->
+        <div class="P2">
+            <input id='dinheiro' type='text' value='' onkeyup="insere()" />
+            <p>seu nome é <label id="grana"></label></p>
+            <script type="text/javascript">
+                var grana = document.getElementById('grana');
+                var dindin = document.getElementById('dinheiro');
+
+                function insere() {
+                    var dinheiro = dindin.value;
+                    if (dinheiro == '') dinheiro = "";
+                    grana.innerHTML = dinheiro;
+                }
+            </script>
+        </div>
+    </div>
+    <button onclick="getElementById('imagem1').src=''">imagem2</button>
+    <img id="imagem" src="" alt="">
+    <button onclick="getElementById('imagem1').src=""">imagem2</button>
+
+</body>
+
+</html>
